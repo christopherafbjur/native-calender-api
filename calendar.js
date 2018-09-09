@@ -77,7 +77,7 @@ class NativeCalendar {
       return this.getErrorsAsReject();
     }
 
-    return this.asyncDeleteEvent(job).then(() => {
+    return this.asyncDeleteEvent(event).then(() => {
       return P.resolve();
     });
   }
